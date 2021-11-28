@@ -1,0 +1,378 @@
+
+:root{
+    --bd: 1px solid #fff;
+    --bdr: 5%;
+    --gap: 1.5rem;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: hsl(226, 43%, 10%);
+    color: #fff;
+    font-family: 'Outfit', sans-serif;
+    font-family: 'Rubik', sans-serif;   
+}
+
+.main{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 2rem); 
+}
+
+.main-container{
+    display: grid;
+    grid-template-areas: 
+    'card0 card1 card2 card3'
+    'card0 card4 card5 card6';    
+    gap: 2rem;
+    width: auto;
+}
+
+.card-0{
+    grid-area: card0;
+    border-radius: var(--bdr);
+    max-height: 30rem;
+}
+
+.sec-1{
+    background: hsl(246, 80%, 60%);
+    padding: var(--gap);
+    border-radius: var(--bdr);
+}
+
+.sec-2{
+    display: flex;
+    flex-direction: column;
+    padding: 0.7rem 1.5rem;
+}
+
+.timestamp{
+    text-align: left;
+    font-size: 1rem;
+    padding: 1rem 0;
+    background: none;
+    outline: none;
+    border: none;
+    width: 5rem;
+    color: #fff;
+    opacity: 0.5;
+}
+
+.timestamp:hover, :active{
+    cursor: pointer;
+    opacity: 1;
+}
+
+.timestamp:focus{
+    opacity: 1;
+}
+
+.card-1{
+    grid-area: card1;
+    border-radius: var(--bdr);
+    position: relative;
+}
+.card-2{
+    grid-area: card2;
+    border-radius: var(--bdr);
+    position: relative;
+}
+.card-3{
+    grid-area: card3;
+    border-radius: var(--bdr);
+    position: relative;
+}
+.card-4{
+    grid-area: card4;
+    border-radius: var(--bdr);
+    position: relative;
+}
+.card-5{
+    grid-area: card5;
+    border-radius: var(--bdr);
+    position: relative;
+}
+.card-6{
+    grid-area: card6;
+    border-radius: var(--bdr);
+    position: relative;
+}
+
+.card{
+    max-height: 14rem;
+    min-width: 12rem;
+    width: 15rem;
+    overflow: hidden;
+}
+
+.card-0{
+    width: 15rem;
+    height: auto;
+    background-color: hsl(235, 46%, 20%);
+}
+
+.avatar{
+    width: 60px;
+    border: 3px solid #fff;
+    border-radius: 50%;
+}
+
+.small-text{
+    font-size: 12px;
+    margin-top: 2rem;
+}
+
+.person-name{
+    font-size: 2.5rem;
+    font-weight: 300;
+    margin-top: -0.7rem;
+}
+
+.attribution {
+    width: calc(100% - 10px);
+    height: 2rem;
+    bottom: 1rem;
+    font-size: 11px; 
+    color: hsl(0, 0, 100%);
+    text-align: center; 
+    gap: 0.5rem;
+}
+
+.attribution a { 
+    text-decoration: none;
+    color: hsl(228, 45%, 44%); 
+}
+
+.card-1-title,
+.card-2-title,
+.card-3-title,
+.card-4-title,
+.card-5-title,
+.card-6-title{
+    font-size: 18px;
+}
+
+img{
+    width: 75px;
+    height: auto;
+    margin-right: 1rem;
+}
+
+.title-icon{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 1.5rem;
+    flex-direction: row;
+}
+
+svg:hover path{
+    cursor: pointer;
+    fill: hsl(0, 0%, 100%);
+}
+
+.card-1-sec-1,
+.card-2-sec-1,
+.card-3-sec-1,
+.card-4-sec-1,
+.card-5-sec-1,
+.card-6-sec-1
+{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    z-index: -10;
+    border-radius: var(--bdr) var(--bdr) 0 0;
+    margin-top: -0.3rem;
+    height: 4rem;
+}
+
+.card-1-sec-2,
+.card-2-sec-2,
+.card-3-sec-2,
+.card-4-sec-2,
+.card-5-sec-2,
+.card-6-sec-2
+{
+    padding: var(--gap);
+    margin-top: 3rem;
+    z-index: 10;
+    max-height: 12rem;
+    background-color: hsl(235, 46%, 20%);
+    border-radius: var(--bdr);
+}
+
+.card-1-sec-2:hover,
+.card-2-sec-2:hover,
+.card-3-sec-2:hover,
+.card-4-sec-2:hover,
+.card-5-sec-2:hover,
+.card-6-sec-2:hover{
+    background-color: hsl(235, 45%, 50%);
+}
+
+.work-hour-daily,
+.play-hour-daily,
+.study-hour-daily,
+.exe-hour-daily,
+.social-hour-daily,
+.sc-hour-daily
+{
+    font-size: 3rem;
+    margin: 0;
+    margin-top: 0.5rem;
+    font-weight: 300;
+}
+
+.work-prev-hour-daily,
+.play-prev-hour-daily,
+.study-prev-hour-daily,
+.exe-prev-hour-daily,
+.social-prev-hour-daily,
+.sc-prev-hour-daily
+{
+    font-size: 14px;
+    color: hsla(0, 0%, 100%, 0.6);
+}
+
+.card-1-sec-1{
+    background-color: hsl(15, 100%, 70%);
+}
+ 
+.card-2-sec-1{
+    background-color: hsl(195, 74%, 62%);
+}
+ 
+.card-3-sec-1{
+    background-color: hsl(348, 100%, 68%);
+}
+
+.card-4-sec-1{
+    background-color: hsl(145, 58%, 55%);
+}
+
+.card-5-sec-1{  
+    background-color: hsl(264, 64%, 52%);
+}
+
+.card-6-sec-1{
+    background-color: hsl(43, 84%, 65%);
+}
+
+.daily-prev-flex{
+    display: flex;
+    flex-direction: column;
+}
+
+@media only screen and (max-width: 1081px){
+    .card-0{
+        max-height: 30rem;
+    }
+    .main-container{
+        grid-template-areas: 
+        'card0 card1 card2'
+        'card0 card3 card4'
+        'card0 card5 card6';
+        margin: 2rem 0;
+    }
+}
+
+@media only screen and (max-width: 851px){
+    .main-container{
+        grid-template-areas: 
+        'card0 card1'
+        'card0 card2'
+        'card3 card4'
+        'card5 card6';
+        margin: 2rem 0;
+    }
+}
+
+@media only screen and (max-width: 570px){
+    .main-container{
+        display: block;
+        gap: var(--gap);
+        margin: 2rem;
+    }
+    .card{
+        margin: 1rem 0 1rem;
+        width: auto;
+    }
+    .card-0{
+        width: auto;
+    }
+    .sec-1{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 5rem    ;
+    }
+    .avatar{
+        width: 40px;
+        height: 40px;
+    }
+    .person-report{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .small-text{
+        font-size: 0.7rem;
+        margin-top: 1rem;
+    }
+    .person-name{
+        font-size: 1rem;
+    }
+    .sec-2{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        max-height: 4rem;
+        padding: 0 1rem;
+    }
+    .daily-prev-flex{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .work-hour-daily,
+    .play-hour-daily,
+    .study-hour-daily,
+    .exe-hour-daily,
+    .social-hour-daily,
+    .sc-hour-daily{
+        font-size: 1.7rem;
+    }
+    .card-1-sec-2, 
+    .card-2-sec-2, 
+    .card-3-sec-2, 
+    .card-4-sec-2, 
+    .card-5-sec-2, 
+    .card-6-sec-2{
+        max-height: 7rem;
+    }
+    .work-prev-hour-daily,
+    .play-prev-hour-daily,
+    .study-prev-hour-daily,
+    .exe-prev-hour-daily,
+    .social-prev-hour-daily,
+    .sc-prev-hour-daily{
+        font-size: 0.8rem;
+    }
+}
