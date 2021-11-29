@@ -1,10 +1,10 @@
 // Getting title elements of all cards 
-let workTitle = document.querySelector("body > div.main > div > div.card-1.card > section.card-1-sec-2 > div.title-icon > p");
-let playTitle = document.querySelector("body > div.main > div > div.card-2.card > section.card-2-sec-2 > div.title-icon > p");
-let studyTitle = document.querySelector("body > div.main > div > div.card-3.card > section.card-3-sec-2 > div.title-icon > p");
-let exerciseTitle = document.querySelector("body > div.main > div > div.card-4.card > section.card-4-sec-2 > div.title-icon > p");
-let socialTitle = document.querySelector("body > div.main > div > div.card-5.card > section.card-5-sec-2 > div.title-icon > p");
-let sFTitle = document.querySelector("body > div.main > div > div.card-6.card > section.card-6-sec-2 > div.title-icon > p");
+let workTitle = document.querySelector("body > div.main > div > div.card-1.card > section.card-1-sec-2 > div.title-icon > h2");
+let playTitle = document.querySelector("body > div.main > div > div.card-2.card > section.card-2-sec-2 > div.title-icon > h2");
+let studyTitle = document.querySelector("body > div.main > div > div.card-3.card > section.card-3-sec-2 > div.title-icon > h2");
+let exerciseTitle = document.querySelector("body > div.main > div > div.card-4.card > section.card-4-sec-2 > div.title-icon > h2");
+let socialTitle = document.querySelector("body > div.main > div > div.card-5.card > section.card-5-sec-2 > div.title-icon > h2");
+let sFTitle = document.querySelector("body > div.main > div > div.card-6.card > section.card-6-sec-2 > div.title-icon > h2");
 
 // Getting current elements of all cards
 let workCurrent = document.querySelector("body > div.main > div > div.card-1.card > section.card-1-sec-2 > div:nth-child(2) > p.work-hour-daily");

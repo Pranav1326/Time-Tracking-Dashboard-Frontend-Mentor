@@ -15,172 +15,170 @@
 </head>
 <body>
   <div class="main">
-    <div class="main-container">
+    <div class="main-container" role="main">
 
       <!-- Card-0 or main details-card -->
       <div class="card-0">
         <section class="sec-1">
-          <img src="./images/image-jeremy.png" class="avatar" alt="avatar">
+          <img src="./images/image-jeremy.png" class="avatar" alt="avatar" role="img">
           <div class="person-report">
-            <p class="small-text">
+            <p class="small-text" role="contentinfo">
               Report for
             </p>
-            <p class="person-name">
+            <h1 class="person-name" role="heading">
               Jeremy Robson
-            </p>
+            </h1>
           </div>
         </section>
-        <section class="sec-2">
-          <button class="timestamp"> Daily </button> 
-          <button class="timestamp"> Weekly </button> 
-          <button class="timestamp"> Monthly </button> 
-        </section>
+        <div class="sec-2" role="button">
+          <button class="timestamp" role="button"> Daily </button> 
+          <button class="timestamp" role="button"> Weekly </button> 
+          <button class="timestamp" role="button"> Monthly </button> 
+        </div>
       </div>
   
       <!-- Card-1 or work-card -->
       <div class="card-1 card">
-        <section class="card-1-sec-1">
+        <div class="card-1-sec-1">
           <img src="./images/icon-work.svg" aria-hidden="true" alt="">
-        </section>
-        <section class="card-1-sec-2">
+        </div>
+        <div class="card-1-sec-2">
           <div class="title-icon">
-            <p class="card-1-title">
+            <h2 class="card-1-title" role="heading">
               Work
-            </p>
-            <a href="#">
-              <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
-            </a>
+            </h2>
+            <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
           </div>
           <div class="daily-prev-flex">
-            <p class="work-hour-daily">
+            <p class="work-hour-daily" role="contentinfo">
               5hrs <!-- daily -->
             </p>
-            <p class="work-prev-hour-daily">
+            <p class="work-prev-hour-daily" role="contentinfo">
               Previous - 7hrs <!-- daily --> 
             </p>
           </div>
-        </section>
+        </div>
       </div>
 
       <!-- Card-2 or play-card -->
       <div class="card-2 card">
-        <section class="card-2-sec-1">
+        <div class="card-2-sec-1">
           <img src="./images/icon-play.svg" aria-hidden="true" alt="">
-        </section>
-        <section class="card-2-sec-2">
+        </div>
+        <div class="card-2-sec-2">
           <div class="title-icon">
-            <p class="card-2-title">
+            <h2 class="card-2-title" role="heading">
               Play
-            </p>
+            </h2>
             <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
           </div>
           <div class="daily-prev-flex">
-            <p class="play-hour-daily">
+            <p class="play-hour-daily" role="contentinfo">
               1hr <!-- daily -->
             </p>
-            <p class="play-prev-hour-daily">
+            <p class="play-prev-hour-daily" role="contentinfo">
               Previous - 2hrs <!-- daily -->
             </p>
           </div>
-        </section>
+        </div>
       </div>
   
       <!-- Card-3 or study-card -->
       <div class="card-3 card">
-        <section class="card-3-sec-1">
+        <div class="card-3-sec-1">
           <img src="./images/icon-study.svg" aria-hidden="true" alt="">
-        </section>
-        <section class="card-3-sec-2">
+        </div>
+        <div class="card-3-sec-2">
           <div class="title-icon">
-            <p class="card-3-title">
+            <h2 class="card-3-title" role="heading">
               Study
-            </p>
+            </h2>
             <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
           </div>
             <div class="daily-prev-flex">
-              <p class="study-hour-daily">
+              <p class="study-hour-daily" role="contentinfo">
                 0hrs <!-- daily -->
               </p>
-              <p class="study-prev-hour-daily">
+              <p class="study-prev-hour-daily" role="contentinfo">
                 Previous - 1hr <!-- daily -->
               </p>
             </div>
-        </section>
+        </div>
       </div>
   
       <!-- Card-4 or execercise-card -->
       <div class="card-4 card">
-        <section class="card-4-sec-1">
+        <div class="card-4-sec-1">
           <img src="./images/icon-exercise.svg" aria-hidden="true" alt="">
-        </section>
-        <section class="card-4-sec-2">
+        </div>
+        <div class="card-4-sec-2">
           <div class="title-icon">
-            <p class="card-4-title">
+            <h2 class="card-4-title" role="heading">
               Exercise
-            </p>
+            </h2>
             <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
           </div>
           <div class="daily-prev-flex">
-            <p class="exe-hour-daily">
+            <p class="exe-hour-daily" role="contentinfo">
               1hr <!-- daily -->
             </p>
-            <p class="exe-prev-hour-daily">
+            <p class="exe-prev-hour-daily" role="contentinfo">
               Previous - 1hr <!-- daily -->
             </p>
           </div>
-        </section>
+        </div>
       </div>
   
       <!-- Card-5 or Social-Card -->
       <div class="card-5 card">
-        <section class="card-5-sec-1">
+        <div class="card-5-sec-1">
           <img src="./images/icon-social.svg" aria-hidden="true" alt="">
-        </section>
-        <section class="card-5-sec-2">
+        </div>
+        <div class="card-5-sec-2">
           <div class="title-icon">
-            <p class="card-5-title">
+            <h2 class="card-5-title" role="heading">
               Social
-            </p>
+            </h2>
             <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
           </div>
           <div class="daily-prev-flex">
-            <p class="social-hour-daily">
+            <p class="social-hour-daily" role="contentinfo">
               1hr <!-- daily -->
             </p>
-            <p class="social-prev-hour-daily">
+            <p class="social-prev-hour-daily" role="contentinfo">
               Previous - 3hrs <!-- daily -->
             </p>
           </div>
-        </section>
+        </div>
       </div>
   
       <!-- Card-6 or Self-Care-card -->
       <div class="card-6 card">
-        <section class="card-6-sec-1">
+        <div class="card-6-sec-1">
           <img src="./images/icon-self-care.svg" aria-hidden="true" alt="">
-        </section>
-        <section class="card-6-sec-2">
+        </div>
+        <div class="card-6-sec-2">
           <div class="title-icon">
-            <p class="card-6-title">
+            <h2 class="card-6-title" role="heading">
               Self Care
-            </p>
+            </h2>
             <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
           </div>
           <div class="daily-prev-flex">
-            <p class="sc-hour-daily">
+            <p class="sc-hour-daily" role="contentinfo">
               0hrs <!-- daily -->
             </p>
-            <p class="sc-prev-hour-daily">
+            <p class="sc-prev-hour-daily" role="contentinfo">
               Previous - 1hr <!-- daily -->
             </p>
           </div>
-        </section>
+        </div>
       </div>
   
     </div>
   </div>
 
-  <div role="footer" class="attribution">
+  <div role="doc-credits" class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor.</a>
     Coded by <a href="#">Pranav.</a>
   </div>
