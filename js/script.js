@@ -1,31 +1,31 @@
 // Getting title elements of all cards 
-let workTitle = document.querySelector("body > div.main > div > div.card-1.card > section.card-1-sec-2 > div.title-icon > h2");
-let playTitle = document.querySelector("body > div.main > div > div.card-2.card > section.card-2-sec-2 > div.title-icon > h2");
-let studyTitle = document.querySelector("body > div.main > div > div.card-3.card > section.card-3-sec-2 > div.title-icon > h2");
-let exerciseTitle = document.querySelector("body > div.main > div > div.card-4.card > section.card-4-sec-2 > div.title-icon > h2");
-let socialTitle = document.querySelector("body > div.main > div > div.card-5.card > section.card-5-sec-2 > div.title-icon > h2");
-let sFTitle = document.querySelector("body > div.main > div > div.card-6.card > section.card-6-sec-2 > div.title-icon > h2");
+let workTitle = document.querySelector("body > div.main > div > div.card-1.card > div.card-1-sec-2 > div.title-icon > h2");
+let playTitle = document.querySelector("body > div.main > div > div.card-2.card > div.card-2-sec-2 > div.title-icon > h2");
+let studyTitle = document.querySelector("body > div.main > div > div.card-3.card > div.card-3-sec-2 > div.title-icon > h2");
+let exerciseTitle = document.querySelector("body > div.main > div > div.card-4.card > div.card-4-sec-2 > div.title-icon > h2");
+let socialTitle = document.querySelector("body > div.main > div > div.card-5.card > div.card-5-sec-2 > div.title-icon > h2");
+let sFTitle = document.querySelector("body > div.main > div > div.card-6.card > div.card-6-sec-2 > div.title-icon > h2");
 
 // Getting current elements of all cards
-let workCurrent = document.querySelector("body > div.main > div > div.card-1.card > section.card-1-sec-2 > div:nth-child(2) > p.work-hour-daily");
-let playCurrent = document.querySelector("body > div.main > div > div.card-2.card > section.card-2-sec-2 > div.daily-prev-flex > p.play-hour-daily");
-let studyCurrent = document.querySelector("body > div.main > div > div.card-3.card > section.card-3-sec-2 > div.daily-prev-flex > p.study-hour-daily");
-let exerciseCurrent = document.querySelector("body > div.main > div > div.card-4.card > section.card-4-sec-2 > div.daily-prev-flex > p.exe-hour-daily");
-let socialCurrent = document.querySelector("body > div.main > div > div.card-5.card > section.card-5-sec-2 > div.daily-prev-flex > p.social-hour-daily");
-let sFCurrent = document.querySelector("body > div.main > div > div.card-6.card > section.card-6-sec-2 > div.daily-prev-flex > p.sc-hour-daily");
+let workCurrent = document.querySelector("body > div.main > div > div.card-1.card > div.card-1-sec-2 > div:nth-child(2) > p.work-hour-daily");
+let playCurrent = document.querySelector("body > div.main > div > div.card-2.card > div.card-2-sec-2 > div.daily-prev-flex > p.play-hour-daily");
+let studyCurrent = document.querySelector("body > div.main > div > div.card-3.card > div.card-3-sec-2 > div.daily-prev-flex > p.study-hour-daily");
+let exerciseCurrent = document.querySelector("body > div.main > div > div.card-4.card > div.card-4-sec-2 > div.daily-prev-flex > p.exe-hour-daily");
+let socialCurrent = document.querySelector("body > div.main > div > div.card-5.card > div.card-5-sec-2 > div.daily-prev-flex > p.social-hour-daily");
+let sFCurrent = document.querySelector("body > div.main > div > div.card-6.card > div.card-6-sec-2 > div.daily-prev-flex > p.sc-hour-daily");
 
 // Getting previous elements of all cards
-let workPrevious = document.querySelector("body > div.main > div > div.card-1.card > section.card-1-sec-2 > div.daily-prev-flex > p.work-prev-hour-daily");
-let playPrevious = document.querySelector("body > div.main > div > div.card-2.card > section.card-2-sec-2 > div.daily-prev-flex > p.play-prev-hour-daily");
-let studyPrevious = document.querySelector("body > div.main > div > div.card-3.card > section.card-3-sec-2 > div.daily-prev-flex > p.study-prev-hour-daily");
-let execersicePrevious = document.querySelector("body > div.main > div > div.card-4.card > section.card-4-sec-2 > div.daily-prev-flex > p.exe-prev-hour-daily");
-let socialPrevious = document.querySelector("body > div.main > div > div.card-5.card > section.card-5-sec-2 > div.daily-prev-flex > p.social-prev-hour-daily");
-let sFPrevious = document.querySelector("body > div.main > div > div.card-6.card > section.card-6-sec-2 > div.daily-prev-flex > p.sc-prev-hour-daily");
+let workPrevious = document.querySelector("body > div.main > div > div.card-1.card > div.card-1-sec-2 > div.daily-prev-flex > p.work-prev-hour-daily");
+let playPrevious = document.querySelector("body > div.main > div > div.card-2.card > div.card-2-sec-2 > div.daily-prev-flex > p.play-prev-hour-daily");
+let studyPrevious = document.querySelector("body > div.main > div > div.card-3.card > div.card-3-sec-2 > div.daily-prev-flex > p.study-prev-hour-daily");
+let execersicePrevious = document.querySelector("body > div.main > div > div.card-4.card > div.card-4-sec-2 > div.daily-prev-flex > p.exe-prev-hour-daily");
+let socialPrevious = document.querySelector("body > div.main > div > div.card-5.card > div.card-5-sec-2 > div.daily-prev-flex > p.social-prev-hour-daily");
+let sFPrevious = document.querySelector("body > div.main > div > div.card-6.card > div.card-6-sec-2 > div.daily-prev-flex > p.sc-prev-hour-daily");
 
 // Getting Daily, Weekly and Monthly buttons
-let dailyBtn = document.querySelector("body > div.main > div > div.card-0 > section.sec-2 > button:nth-child(1)");
-let weeklyBtn = document.querySelector("body > div.main > div > div.card-0 > section.sec-2 > button:nth-child(2)");
-let monthlyBtn = document.querySelector("body > div.main > div > div.card-0 > section.sec-2 > button:nth-child(3)");
+let dailyBtn = document.querySelector("body > div.main > div > div.card-0 > div.sec-2 > button:nth-child(1)");
+let weeklyBtn = document.querySelector("body > div.main > div > div.card-0 > div.sec-2 > button:nth-child(2)");
+let monthlyBtn = document.querySelector("body > div.main > div > div.card-0 > div.sec-2 > button:nth-child(3)");
 
 // Fetching data from the data.json file
 
